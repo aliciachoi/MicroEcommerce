@@ -1,45 +1,28 @@
-# micro-ecommerce
-Learn how to build a Micro eCommerce Web App with Python and Serverless Postgres
+## Overview
 
+- MicroEcommerce is a full-stack e-commerce website for selling and buying one-off digital products.
 
-## Prerequisites
-- Python experience with [30 Days of Python](https://www.codingforentrepreneurs.com/courses/30-days-python-38/) or similiar
-- Django experience with [Try Django](https://www.codingforentrepreneurs.com/courses/try-django-3-2/) or similiar
-- Basic understanding of HTML and CSS
+## Features
 
-## Required Software
-- [Python 3.10](https://www.python.org/downloads/) or newer
-- [Node.js 18.15 LTS](https://nodejs.org/) or newer (For Tailwind.CSS)
-- [Git](https://git-scm.com/)
+- User Authentication and Roles: Users can create accounts with different roles (Seller and Buyer).
+- Product Management: Sellers can upload and edit digital products. Some products are available for free download, while others require purchasing.
+- Checkout and Payment Integration: Seamless integration with Stripe API for purchasing products. Free products are immediately downloadable.
+- Downloadable Products: Buyers can instantly download purchased items, while free products are accessible without purchase.
 
+## Technologies
 
-## Getting Started
+- Frontend: HTML, CSS, JavaScript, Tailwind CSS
+- Backend: Python, Django
+- Database: Serverless Postgres
+- Authentication: Django Authentication System
+- Payment Processing: Stripe API
+- Deployment: Amazon Web Services (AWS) including S3 bucket for static file hosting, Elastic Container Registry (ECR) for container image storage, and EC2 for hosting Django application.
 
-```bash
-mkdir -p ~/dev
-cd ~/dev
-git clone https://github.com/codingforentrepreneurs/micro-ecommerce
-cd micro-ecommerce
-git checkout start
-```
+## Screenshots
 
-To install packages and run various command shortcuts, we use [rav](https://github.com/jmitchel3/rav). Open `rav.yaml` to see the various commands available if you prefer to not use `rav`.
+<img width="1415" alt="Screenshot 2024-02-20 at 11 05 40" src="https://github.com/aliciachoi/MicroEcommerce/assets/125190356/feaf55d3-573f-40a8-a5c1-c8dc8ec7c53b">
+<img width="1359" alt="Screenshot 2024-02-20 at 11 06 04" src="https://github.com/aliciachoi/MicroEcommerce/assets/125190356/5e65212d-c725-45ad-af60-34d65f453a72">
+<img width="1348" alt="Screenshot 2024-02-20 at 11 06 26" src="https://github.com/aliciachoi/MicroEcommerce/assets/125190356/46801252-f975-4451-8d6e-baf0b4022a3b">
+<img width="1042" alt="Screenshot 2024-02-20 at 11 09 04" src="https://github.com/aliciachoi/MicroEcommerce/assets/125190356/ae334a37-e2db-4a57-b27a-93b09e1388e3">
+<img width="1499" alt="Screenshot 2024-02-20 at 11 05 28" src="https://github.com/aliciachoi/MicroEcommerce/assets/125190356/1811f24a-d307-451c-b8dc-087459d8ed89">
 
-_macOS/Linux Users_
-```bash
-python3 -m venv venv
-source venv/bin/activate
-venv/bin/python -m pip install pip pip-tools rav --upgrade
-venv/bin/rav run installs
-rav run freeze
-```
-
-
-_Windows Users_
-```powershell
-c:\Python310\python.exe -m venv venv
-.\venv\Scripts\activate
-python -m pip install pip pip-tools rav --upgrade
-rav run win_installs
-rav run win_freeze
-```
